@@ -33,3 +33,15 @@ Outils : Grafana et Prometheus.
 1. `kubectl create ns votingapp`
 2. `kubectl create secret generic redis-credentials --from-literal=username=mydbusername --from-literal=password=myinsanepassword --namespace=votingapp`
 3. `kubectl apply -f ./infra.yml --namespace=votingapp`
+
+## Démonstration
+
+### Dashboard Redis
+![](https://github.com/DevSoleo/simplon-brief-10/blob/main/redis-dashboard.png)
+
+### Dashboard Voting App
+![](https://github.com/DevSoleo/simplon-brief-10/blob/main/votingapp-dashboard.png)
+
+### Alertes Redis
+![](https://github.com/DevSoleo/simplon-brief-10/blob/main/redis-alert-cpu.png)
+![](https://github.com/DevSoleo/simplon-brief-10/blob/main/redis-alert-memory.png)
